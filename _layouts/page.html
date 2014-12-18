@@ -1,20 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!--
-====================================================
-    __  ____  ______________  _______ ___    __ 
-   / / / /  |/  / ____/   \ \/ / ___//   |  / / 
-  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /  
- / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
-/_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
-                                                     
-====================================================
-Owner Name: Hossain Mohammad Faysal
-Profile: https://www.facebook.com/hmfaysal
-Version: 1.1
-Description: Awesome dude, awesome life
-====================================================
--->
 <head>
 {% include head.html %}
 </head>
@@ -47,7 +32,7 @@ Description: Awesome dude, awesome life
                     <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
                 {% endif %} </li>
 {% endfor %}            
-           <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+           <!--li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li  Feed has been removed for now -->
     </ul>
 </div>
             </div>
@@ -61,6 +46,10 @@ Description: Awesome dude, awesome life
 <article class="summer-page-content">
                     <div>{{ content }}</div>
 </article>
+         <div class="small-12">
+         <section>Theme by <a class="icon-ghost" href="https://twitter.com/hmfaysal">@hmfaysal</a></section>
+         <br>
+         </div>
         <div class="cf"></div>
     {% include footer.html %}
 </main>
