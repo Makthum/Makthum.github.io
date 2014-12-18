@@ -1,13 +1,13 @@
 ---
 layout: page
-permalink: /hossain-mohd-faysal/index.html
-title: HOSSAIN MOHAMMAD FAYSAL
-tags: [Hossain, Mohd, Faysal, hmfaysal]
+permalink: /makthum/index.html
+title: Mohamed Makthum Mohamed Ikbal
+tags: [Makthum, zarroc]
 image:
-  feature: Hossain-Mohd-Faysal.jpg
+  feature: makthum.jpg
 ---
 
-  <img src="{{ site.url }}/images/hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
+  <img src="{{ site.url }}/images/makthum.jpg" alt="Mohamed Makthum Mohamed Ikbal">
 
 
 My name is **Hossain Mohd. Faysal**, and this is my personal blog.  
