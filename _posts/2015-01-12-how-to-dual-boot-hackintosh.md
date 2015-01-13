@@ -10,9 +10,6 @@ tags:
   - Dual Boot
   - UEFI Dual Boot
   - Boot Camp Dual Boot
-imagefeature: "website-speed.jpg"
-imagecredit: spreadeffect.com
-imagecreditlink: "http://www.spreadeffect.com/blog/improve-website-speed/"
 comments: true
 mathjax: null
 featured: true
