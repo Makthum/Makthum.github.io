@@ -3,7 +3,7 @@ layout: post
 title: Dual Boot Hackintosh (Yosemite) & Windows 8.1 UEFI Boot using Boot Camp
 description: "Dual booting Hackintosh"
 headline: "EFI Dual boot Hacktintosh"
-categories: personal
+categories: "Softwaretools"
 tags: 
   - Hackintosh
   - yosemite
