@@ -30,13 +30,13 @@ Turing machine was suppose to read it contents from tape and based on the charac
 
 Another point to mention here is that turing machine starts at a particular state and stops when a particular state is reached. To sum up following are the characteristics of a turing machine
 
-1) Turing Machine starts at a particular state , with scanner head at paticular position 
-2) Read the character under head, 
-3) Now based on the state-Action table either write some character or do nothing 
-4) After writing character move the head left or right again based on the rule 
-5) Move to a new state
-6) if new state is the final state stop the turing machine 
-7) I have also decided to include that if there are no rules found , Turing machine halts.
+1. Turing Machine starts at a particular state , with scanner head at paticular position 
+2. Read the character under head, 
+3. Now based on the state-Action table either write some character or do nothing 
+4. After writing character move the head left or right again based on the rule 
+5. Move to a new state
+6. if new state is the final state stop the turing machine 
+7. I have also decided to include that if there are no rules found , Turing machine halts.
 
 ![state-Action]({{ site.url }}/images/state-Action.gif)
 
