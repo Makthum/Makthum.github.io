@@ -59,6 +59,6 @@ Tape:- Tape object merely stores the content of the string file we need to work 
 There are few things to consider here State-Action table might consist of wild card characters which indicates that rule applies to any character under the head. If an '*' appears under the write character section, then it means no character is written to the Tape(Do nothing just move the head).
 
 you can download my code from [here]({{ site.url }}/images/turingmachine.zip)
-![Results]({{ site.url }}/images/TuringResults.png)
+![Results]({{ site.url }}/images/TuringResult.png)
 
 [MyCode]() 
