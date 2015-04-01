@@ -25,7 +25,7 @@ Yes github allows users to setup pages for projects as well as it users. For use
 Jekyll Installation 
 ===================
 
-If you are not planning to blog or maintain the posts in future you can directly fork the Jekyll themes from any of the github repositories and give it a go. Your page should be up in a minute. I wanted to blog regularly so i wanted a local setup to write and publish post to my github repository. For local dev setup you need to install Jekyll first. Github doesn't support all the gems for now it supports only two gems. You should check their doc page for more details [here] (https://pages.github.com) and [Github + Jekyll](https://help.github.com/articles/using-jekyll-with-pages/)
+If you are not planning to blog or maintain the posts in future you can directly fork the Jekyll themes from any of the github repositories and give it a go. Your page should be up in a minute. I wanted to blog regularly so i wanted a local setup to write and publish post to my github repository. For local dev setup you need to install Jekyll first. Github doesn't support all the gems for now it supports only two gems. You should check their doc page for more details [here](https://pages.github.com) and [Github + Jekyll](https://help.github.com/articles/using-jekyll-with-pages/)
 
 {% highlight ruby %}
 gem install jekyll
