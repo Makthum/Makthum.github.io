@@ -1,27 +1,45 @@
-Notepad is a Jekyll theme which is very simple, clean and beautiful. This theme is good for any blog.
-  
-Main Features:
+# jekyll-uno
 
-* Zurb Foundation 5 – css framework
-* Scss files with settings file
-* Fullscreen post covers with header wich will be bright or dark according to background image
-* Fast and light
-* Font Awesome
-* Disqus comments integration
-Y
-ou can set post image covers by using only Kramdown narkdown, just place something like this: ![cover-image](http://path-to-your-image.jpg)
+Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
 
-Credits:
+> :warning:
+  This theme requires ruby and rubygems installed
 
-* Zurb Foundation 5 http://foundation.zurb.com/
-* Font Awesome http://fontawesome.io
-* Google fonts http://www.google.com/fonts
-* Background check http://kennethcachia.com/background-check
-* Codrops article: http://tympanus.net/codrops/2014/05/22/inspiration-for-article-intro-effects/
-* There are also tools like jQuery, Modernizr, Normalize.
+### Features
 
-If you'd like to give me credit somewhere on your blog or tweet a shout out to [@hmfaysal](https://twitter.com/hmfaysal), that would be pretty sweet.
+* Clean layout
+* Resposive layout
+* Pagination
+* Syntax highlighting
+* Social links
+* Tags listing page
+* Categories listing page
+* Google Analytics integration
+* Disqus integration
 
+---
 
-Warm Regards and Stay Creative,  
-Hossain Mohd. Faysal
+### Install and Test
+
+1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
+2. Enter the folder: `cd jekyll-uno/`
+3. If you don't have bundler installed: `gem install bundler`
+3. Install Ruby gems: `bundle install`
+4. Start Jekyll server: `bundle exec jekyll serve --watch`
+
+Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
+
+---
+
+### Demo and Download
+
+[Demo](http://joshgerdes.com/jekyll-uno/)
+[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
+
+![jekyll-uno - free Jekyll theme](/screenshot.png)
+
+---
+
+### Copyright and license
+
+It is under [the MIT license](/LICENSE).

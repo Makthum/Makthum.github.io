@@ -1,96 +1,24 @@
 ---
-layout: home
-title: Blog on Useful Softwares and Scripts
-description: "A blog for software development comunity on useful tools and tricks"
-tags: [UBC,Makthum,Zarroc,Engineer,Software Developer]
+layout: default
 ---
-{% if site.paginate %}
-	{% for post in paginator.posts %}
-    <article class="summer-index-post post row">
-        <div class="small-12 medium-3 large-2 columns datetime">
-            <span class="summer-post-meta">
-                <time datetime="{{ post.date | date_to_xmlschema }}">
-                    <span class="day">
-                        {{ post.date | date: "%d" }}
-                    </span>
-                    <span class="month-year">
-                        {{ post.date | date: "%B %Y" }}
-                    </span>
-                </time>
-            </span>
-        </div>
-        <div class="small-12 medium-9 large-10 columns">
-            <header class="summer-post-header">
-                <h3 class="summer-post-title">
-                    <a href="{{ site.url }}{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                </h3>
-            </header>
-            <section class="summer-post-excerpt">
-                <p>{{ post.content | strip_html | truncatewords:40 }}</p>
-            </section>
-            
-                <div class="summer-index-post-tags">
-                {% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
-                    
-                </div>
-            
-        </div>
-    </article>
-	{% endfor %}
-    <nav class="pagination" role="navigation">
-    {% if paginator.previous_page %}
-	    {% if paginator.previous_page == 1 %}
-	    <a class="newer-posts" href="{{ site.url }}"><i class="fa fa-chevron-left"></i> Newer</a>
-	    {% else %}
-	    <a class="newer-posts" href="{{ site.url }}/page{{ paginator.previous_page }}"><i class="fa fa-chevron-left"></i> Newer</a>
-	    {% endif %}
-	{% else %}
-    <span class="newer-posts faded"><i class="fa fa-chevron-left"></i> Newer</span>
-    {% endif %}
 
+<div class="main-post-list">
 
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    	{% if paginator.next_page %} 
-        <a class="older-posts" href="{{ site.url }}/page{{ paginator.next_page }}/">Older <i class="fa fa-chevron-right"></i></a>
-    	{% else %}
-    	<span class="older-posts faded">Older <i class="fa fa-chevron-right"></i></span>
-    	{% endif %}
-	</nav>
-{% else %}
-	{% for post in site.posts %}
-    <article class="summer-index-post post row">
-        <div class="small-12 medium-3 large-2 columns datetime">
-            <span class="summer-post-meta">
-                <time datetime="{{ post.date | date_to_xmlschema }}">
-                    <span class="day">
-                        {{ post.date | date: "%d" }}
-                    </span>
-                    <span class="month-year">
-                        {{ post.date | date: "%B %Y" }}
-                    </span>
-                </time>
-            </span>
-        </div>
-        <div class="small-12 medium-9 large-10 columns">
-            <header class="summer-post-header">
-                <h3 class="summer-post-title">
-                    <a href="{{ site.url }}{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                </h3>
-            </header>
-            <section class="summer-post-excerpt">
-                <p>{{ post.content | strip_html | truncatewords:100 }}</p>
-            </section>
-            
-                <div class="summer-index-post-tags">
-                {% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
-                    
-                </div>
-            
-        </div>
-    </article>
-	{% endfor %}  
-   {% endif %}
+  <ol class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&hellip;</p>
+        <div class="post-list__meta"><time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time> &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span></div>
+        <hr class="post-list__divider">
+      </li>
+    {% endfor %}
+  </ol>
+
+  <hr class="post-list__divider ">
+
+  {% if paginator.previous_page or paginator.next_page %}
+      {% include pagination.html %}
+  {% endif %}
+
+</div>

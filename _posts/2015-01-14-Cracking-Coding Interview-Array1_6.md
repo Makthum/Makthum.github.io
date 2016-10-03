@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Program to Rotate NxN matrix by 90 degrees in place.
+title: "Program to Rotate NxN matrix by 90 degrees in place."
 mathjax: false
 featured: true
 comments: true
@@ -18,8 +18,8 @@ Given an image represented by an NxN matrix, where each pixel in the image is 4 
 
 This question is an interesting one as it requires you too do the rotation in place without using additional array. I was able to crack the logic behind it though i had to take some help before I could completely put the answer on paper.
 
-Question
-========
+## Question
+
 
 What does the question wants you to solve ? Suppose you are given an array like 
 
@@ -53,9 +53,8 @@ you can now see its one clockwise rotation of edge elements.
 
  When you look at the second set of values rotated you can find that all values are located at certain offset from the last element or first element of that row. Using the intuition we will try to understand the logic behind this code snippet.
 
- {% highlight java %}
- 
- public static void rotate(int[][] matrix, int n) { 
+```java
+public static void rotate(int[][] matrix, int n) { 
   for (int layer = 0; layer < n / 2; ++layer) {
     int first = layer; intlast=n-1-layer;
     for(int i = first; i < last; ++i) {
@@ -69,11 +68,10 @@ you can now see its one clockwise rotation of edge elements.
       matrix[last][last - offset] = matrix[i][last];
       // top -> right
       matrix[i][last] = top; // right <- saved top 
-      }
     }
+  }
 }
-
-{% endhighlight %}
+```
 
 source : Cracking Coding Interview Solutions
 
