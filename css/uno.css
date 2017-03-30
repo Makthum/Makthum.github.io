@@ -1104,7 +1104,11 @@ pre {
 	vertical-align: top;
 }
 
-
+.content-wrapper {
+	z-index: 800;
+	display: inline-block;
+	width: 80%;
+	margin-left: 32%; }
 
 .content-wrapper__inner {
 	margin: 0 5%;
@@ -1669,7 +1673,7 @@ input[type="tel"] {
 	.content-wrapper {
 		width: 90%;
 		max-width: none;
-		margin: 0 auto; }
+		margin-left: 32%; }
 
 	.content-wrapper__inner {
 		margin-right: 0;
