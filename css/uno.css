@@ -998,7 +998,7 @@ blockquote {
 	font-family: "Roboto Slab", serif;
 	font-weight: lighter;
 	font-style: italic;
-	font-size: 1.3em;
+	font-size: 0.8em;
 	text-align: center; }
 	blockquote p:last-child {
 		margin-bottom: 0; }
@@ -1104,11 +1104,7 @@ pre {
 	vertical-align: top;
 }
 
-.content-wrapper {
-	z-index: 800;
-	display: inline-block;
-	width: 45%;
-	margin-left: 32%; }
+
 
 .content-wrapper__inner {
 	margin: 0 5%;
@@ -1671,7 +1667,7 @@ input[type="tel"] {
 				width: 25.8%; }
 
 	.content-wrapper {
-		width: 80%;
+		width: 90%;
 		max-width: none;
 		margin: 0 auto; }
 
