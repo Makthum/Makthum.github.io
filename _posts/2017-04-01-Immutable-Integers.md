@@ -27,7 +27,7 @@ This is like a revealation to me. Next moment these questions struck my mind
 1. so how do you increment value contained within Integer object 
 2. is there a method or way to set or modify the value ?(might sound redundant since I already mentioned Integers are mutable)
 
-Answer to the above questions is No. Yes that is correct you cannot modify or set value of the Integer object once it is initialized. It seemed like a bad design to me at the begining becausing i was wondering will it not create thousand of Integer objects say if you run a simple of for loop with iteration count of 100000. I dont't feel good about these many objects as there is considerable overhead involved in creating a object comparated to primitive data type.
+Answer to the above questions is No. Yes that is correct you cannot modify or set value of the Integer object once it is initialized. It seemed like a bad design to me at the begining becausing i was wondering will it not create thousand of Integer objects say if you run a simple for loop with iteration count of 100000. I dont't feel good about these many objects as there is considerable overhead involved in creating a object comparated to primitive data type.
 
 What initially occured as bad design to me, now sounds like a good design when i suddenly realized Integers are wrapper classes and they need to be used only when primitives cannot be used. Always keep this mind when choosing between Integer and primitive int. And then there is also boxing & unboxing overhead involved when using int & Integer interchangeably.
 
