@@ -110,7 +110,7 @@ Integer value :10
 false
 ``` 
 
-This is because Integer objects are cached only when created from primitives and not using constructor. Looking at the source code of Integer class can help you understand better 
+This is because Integer objects are cached only when created from primitives or autoboxing and not using constructor. Looking at the source code of Integer class can help you understand better 
 
 ``` java 
 public static Integer valueOf(int i) {
