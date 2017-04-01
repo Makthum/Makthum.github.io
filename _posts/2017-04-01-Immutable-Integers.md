@@ -33,7 +33,7 @@ What initially occured as bad design to me, now sounds like a good design when i
 
 #### Can you use Increment operator with Integers ?
 
-This again raises a valid question so how in the world is increment operator working with Integer objects. Increment operator is supported starting from Java 7 and before that it is not supported 
+This again raises a valid question so how in the world is increment operator working with Integer objects. Increment operator with Integers is supported starting from Java 7 and before that it is not supported 
 
 ``` java
 
