@@ -16,7 +16,9 @@ featured: true
 published: true
 ---
 
-## Runnable Interface vs Extending Thread Class 
+Java concurreny API offers new utilities and abstraction over low level thread capabilities. Concurrency utilities frees programmer from hardship of writing multi threaded applications using low level concurrency primitives. Framework is scalable n stable while making it easy for prgrammers to extend.
+
+### Runnable Interface vs Extending Thread Class 
 
 1. One major difference being that when you want your Thread to extend other classes it is advisable to implement Runnable interface rather than extending Thread class since Java supports only single inheritance.
 2. This again lends support to that fact favour composition over inheritance. It provides flexibility 
